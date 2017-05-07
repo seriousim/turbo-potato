@@ -1,6 +1,5 @@
 module.exports = function(app) {
 	app.get('/beer', (req, res) => {
-		console.log(req.headers);
 		if (!req.headers.authorization || req.headers.authorization !== 'VerySecretToken') {
 			res.status(401);
 			res.send('Unauthorized');

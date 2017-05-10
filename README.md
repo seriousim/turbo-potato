@@ -14,4 +14,4 @@ Oh! One more thing – you **have** to send `Authorization: VerySecretToken` hea
 
 # Additional info
 
-If you have any questions please feel free to contact us justin@suplo.com
+If you have any questions please feel free to contact us at justin@suplo.com

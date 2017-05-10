@@ -11,3 +11,7 @@ To run api on your machine just run `npm install` and `npm run dev`. API is reac
 To get data from API just call `http://localhost:8000/beer`. 
 
 Oh! One more thing – you **have** to send `Authorization: VerySecretToken` header to access the data.
+
+# Additional info
+
+If you have any questions please feel free to contact us justin@suplo.com

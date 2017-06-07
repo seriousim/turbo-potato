@@ -28,7 +28,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 }));*/
 
 require('./app/routes')(app);
-app.use(express.static('public'));
+app.use(express.static('./build'));
 
 app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/app/front/index.html');

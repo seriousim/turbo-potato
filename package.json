@@ -7,7 +7,7 @@
     "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm build/*; webpack --config ./webpack.config.js --progress --colors",
-    "start": "node server.js",
+    "start": "node server.js"
   },
   "repository": "git@github.com:seriousim/turbo-potato.git",
   "author": "Simonas Valencius <simonas.va@gmail.com>",

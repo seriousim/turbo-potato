@@ -27,8 +27,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
     serverSideRender: false,
 }));*/
 
-require('./app/routes')(app)
-app.use(express.static('build'))
+require('./app/routes')(app);
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/app/front/index.html');

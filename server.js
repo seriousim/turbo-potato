@@ -9,7 +9,7 @@ const port = process.env.PORT || 8000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(webpackMiddleware(compiler, {
+/*app.use(webpackMiddleware(compiler, {
     noInfo: false,
     quiet: false,
     lazy: true,
@@ -25,10 +25,10 @@ app.use(webpackMiddleware(compiler, {
     },
     reporter: null,
     serverSideRender: false,
-}));
+}));*/
 
 require('./app/routes')(app)
-//app.use(express.static('static'))
+app.use(express.static('build'))
 
 app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/app/front/index.html');

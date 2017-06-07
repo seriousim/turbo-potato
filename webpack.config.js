@@ -7,9 +7,7 @@ module.exports = {
     './app/front/index.js' // This is where Webpack will be looking for the entry index.js file
   ],
   output: {
-    path       : path.resolve('./app/front'), // always use absolute paths
-    filename   : 'bundle.js',
-    publicPath : '/assets/',
+    filename: "./build/bundle.js",
   },
   devtool: 'inline-source-map',
   module: {
@@ -46,7 +44,7 @@ module.exports = {
     'Config': JSON.stringify(process.env.ENV === 'production' ? {
       REST_API_URL: "https://intense-atoll-30176.herokuapp.com"
     } : {
-      REST_API_URL: "https://intense-atoll-30176.herokuapp.com"
+      REST_API_URL: "http://localhost:8000"
     })
   }
 }

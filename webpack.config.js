@@ -46,7 +46,7 @@ module.exports = {
     'Config': JSON.stringify(process.env.ENV === 'production' ? {
       REST_API_URL: "https://intense-atoll-30176.herokuapp.com"
     } : {
-      REST_API_URL: "http://localhost:8000"
+      REST_API_URL: "https://intense-atoll-30176.herokuapp.com"
     })
   }
 }

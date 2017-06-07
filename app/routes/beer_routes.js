@@ -35,7 +35,28 @@ module.exports = function(app) {
 		         "bitterness":3,
 		         "color":"light",
 		         "alc":4
-		      }
+		      },
+		      {  
+		         "id":"5",
+		         "name":"Švelnusis",
+		         "bitterness":2,
+		         "color":"light",
+		         "alc":3
+		      },
+		      {  
+		         "id":"6",
+		         "name":"Žebengštis",
+		         "bitterness":7,
+		         "color":"dark",
+		         "alc":10
+		      },
+		      {  
+		         "id":"7",
+		         "name":"Meškos alus",
+		         "bitterness":4,
+		         "color":"light",
+		         "alc":8
+		      },
 		   ],
 		   "itemCount":4
 		}

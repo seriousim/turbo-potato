@@ -1,0 +1,19 @@
+.beerList {
+	padding: 3em 0 0 0;
+}
+
+.beerList table td {
+	text-align: left;
+}
+
+.beerList table thead th {
+	cursor: pointer;
+}
+
+.refresh {
+	margin: 0 0 1em;
+}
+
+.refresh button {
+	cursor: pointer;
+}

@@ -7,7 +7,8 @@ module.exports = {
     './app/front/index.js' // This is where Webpack will be looking for the entry index.js file
   ],
   output: {
-    filename: "./build/bundle.js",
+    path: path.join(__dirname, 'build'),
+    filename: 'bundle.js',
   },
   devtool: 'inline-source-map',
   module: {

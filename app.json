@@ -7,5 +7,5 @@
   "image": "heroku/nodejs",
   "env": {
     "SECRET": "VerySecretToken"
-  }
+  },
 }

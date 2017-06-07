@@ -5,11 +5,14 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm build/*; webpack -p --config ./webpack.config.js --progress",
+    "postinstall": "ENV=production webpack -p --config ./webpack.config.js --progress",
+    "start": "node server.js"
   },
-  "author": "Suplo Procurement",
+  "repository": "git@github.com:seriousim/turbo-potato.git",
+  "author": "Simonas Valencius <simonas.va@gmail.com>",
   "license": "ISC",
-  "heroku-postbuild": "webpack -p --config ./webpack.config.js --progress",
   "devDependencies": {
     "nodemon": "^1.11.0"
   },
